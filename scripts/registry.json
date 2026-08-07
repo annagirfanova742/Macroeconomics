@@ -6,9 +6,14 @@
   "threshold": 0,
   "section": "activity",
   "source_url": "https://ru.investing.com/economic-calendar/russian-monthly-gdp-407 или с https://ru.tradingeconomics.com/russia/monthly-gdp-yoy",
-  "source_id": "te_investing",
+  "source_id": "manual",
   "te_slug": "russia/monthly-gdp-yoy",
-  "investing_id": 407
+  "investing_id": 407,
+  "bounds": [
+   -15,
+   15
+  ],
+  "note": "источник давал ошибочные значения — заполняется вручную через data/manual_overrides.csv"
  },
  "pmi": {
   "title": "PMI обрабатывающих отраслей",
@@ -19,7 +24,11 @@
   "source_url": "https://ru.tradingeconomics.com/russia/manufacturing-pmi#historical\nhttps://cbonds.ru/indexes/51339/?ysclid=mnmw0z9mop186006577",
   "source_id": "cbonds",
   "te_slug": "russia/manufacturing-pmi",
-  "cbonds_id": 51339
+  "cbonds_id": 51339,
+  "bounds": [
+   35,
+   65
+  ]
  },
  "ibk": {
   "title": "Индикатор бизнес-климата ЦБ",
@@ -28,7 +37,11 @@
   "threshold": 0,
   "section": "activity",
   "source_url": "https://cbr.ru/analytics/dkp/monitoring/0726/",
-  "source_id": "cbr_ibk"
+  "source_id": "cbr_ibk",
+  "bounds": [
+   -15,
+   15
+  ]
  },
  "ind": {
   "title": "Пром. производство, % г/г",
@@ -37,9 +50,14 @@
   "threshold": 0,
   "section": "activity",
   "source_url": "https://ru.investing.com/economic-calendar/russian-industrial-production-553",
-  "source_id": "te_investing",
+  "source_id": "manual",
   "te_slug": "russia/industrial-production",
-  "investing_id": 553
+  "investing_id": 553,
+  "bounds": [
+   -20,
+   20
+  ],
+  "note": "источник давал ошибочные значения — заполняется вручную через data/manual_overrides.csv"
  },
  "unemp": {
   "title": "Безработица, %",
@@ -48,9 +66,14 @@
   "threshold": null,
   "section": "activity",
   "source_url": "makro-dashbord.xlsx",
-  "source_id": "te_investing",
+  "source_id": "manual",
   "te_slug": "russia/unemployment-rate",
-  "investing_id": 556
+  "investing_id": 556,
+  "bounds": [
+   1.5,
+   10
+  ],
+  "note": "источник давал ошибочные значения — заполняется вручную через data/manual_overrides.csv"
  },
  "rwage": {
   "title": "Реальные зарплаты, % г/г",
@@ -59,8 +82,13 @@
   "threshold": 0,
   "section": "activity",
   "source_url": "makro-dashbord.xlsx",
-  "source_id": "te_investing",
-  "te_slug": "russia/wage-growth"
+  "source_id": "manual",
+  "te_slug": "russia/wage-growth",
+  "bounds": [
+   -20,
+   25
+  ],
+  "note": "источник давал ошибочные значения — заполняется вручную через data/manual_overrides.csv"
  },
  "nwage": {
   "title": "Номинальные зарплаты, % г/г",
@@ -69,7 +97,11 @@
   "threshold": null,
   "section": "activity",
   "source_url": "makro-dashbord.xlsx",
-  "source_id": "rosstat_zpl"
+  "source_id": "rosstat_zpl",
+  "bounds": [
+   -20,
+   40
+  ]
  },
  "hh": {
   "title": "hh.индекс",
@@ -78,7 +110,11 @@
   "threshold": null,
   "section": "activity",
   "source_url": "https://stats.hh.ru/?ysclid=mshkcr6i2c768642402",
-  "source_id": "hh_stats"
+  "source_id": "hh_stats",
+  "bounds": [
+   1,
+   20
+  ]
  },
  "retail": {
   "title": "Оборот розн. торговли, % г/г",
@@ -89,7 +125,11 @@
   "source_url": "makro-dashbord.xlsx",
   "source_id": "te_investing",
   "te_slug": "russia/retail-sales-annual-growth-rate",
-  "investing_id": 555
+  "investing_id": 555,
+  "bounds": [
+   -25,
+   25
+  ]
  },
  "whole": {
   "title": "Оборот опт. торговли, % г/г",
@@ -98,7 +138,11 @@
   "threshold": 0,
   "section": "activity",
   "source_url": "makro-dashbord.xlsx",
-  "source_id": "rosstat_opttorg"
+  "source_id": "rosstat_opttorg",
+  "bounds": [
+   -40,
+   40
+  ]
  },
  "cars": {
   "title": "Продажи новых авто, % г/г",
@@ -107,7 +151,11 @@
   "threshold": 0,
   "section": "activity",
   "source_url": "makro-dashbord.xlsx",
-  "source_id": "autostat"
+  "source_id": "autostat",
+  "bounds": [
+   -70,
+   120
+  ]
  },
  "cpi_yoy": {
   "title": "ИПЦ, % г/г",
@@ -117,7 +165,11 @@
   "section": "inflation",
   "source_url": "https://rosstat.gov.ru/statistics/price \"Индексы потребительских цен на товары и услуги по Российской Федерации, месяцы (с 1991 г.)\"",
   "source_id": "rosstat_price",
-  "key": "ipc_yoy"
+  "key": "ipc_yoy",
+  "bounds": [
+   0,
+   30
+  ]
  },
  "cpi_mom": {
   "title": "ИПЦ, % м/м",
@@ -127,7 +179,11 @@
   "section": "inflation",
   "source_url": "makro-dashbord.xlsx",
   "source_id": "rosstat_price",
-  "key": "ipc_mom"
+  "key": "ipc_mom",
+  "bounds": [
+   -2,
+   5
+  ]
  },
  "core_yoy": {
   "title": "Базовый ИПЦ, % г/г",
@@ -138,7 +194,11 @@
   "source_url": "https://www.fedstat.ru/indicator/31074",
   "source_id": "fedstat",
   "fedstat_id": 31074,
-  "mode": "yoy"
+  "mode": "yoy",
+  "bounds": [
+   0,
+   30
+  ]
  },
  "core_mom": {
   "title": "Базовый ИПЦ, % м/м",
@@ -149,7 +209,11 @@
   "source_url": "https://www.fedstat.ru/indicator/31074",
   "source_id": "fedstat",
   "fedstat_id": 31074,
-  "mode": "mom"
+  "mode": "mom",
+  "bounds": [
+   -2,
+   5
+  ]
  },
  "ie_pop": {
   "title": "Инфляционные ожидания населения",
@@ -159,7 +223,11 @@
   "section": "inflation",
   "source_url": "https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/",
   "source_id": "cbr_infl_exp",
-  "key": "expected"
+  "key": "expected",
+  "bounds": [
+   5,
+   30
+  ]
  },
  "obs_inf": {
   "title": "Наблюдаемая инфляция",
@@ -169,7 +237,11 @@
   "section": "inflation",
   "source_url": "https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/",
   "source_id": "cbr_infl_exp",
-  "key": "observed"
+  "key": "observed",
+  "bounds": [
+   5,
+   35
+  ]
  },
  "ie_biz": {
   "title": "Инфляционные ожидания бизнеса",
@@ -179,7 +251,11 @@
   "section": "inflation",
   "source_url": "\"Ценовые ожидания предприятий возросли\" https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/",
   "source_id": "cbr_infl_exp",
-  "key": "business"
+  "key": "business",
+  "bounds": [
+   0,
+   40
+  ]
  },
  "food_mom": {
   "title": "Продовольственные товары, % м/м",
