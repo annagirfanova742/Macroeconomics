@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Макродашборд РФ</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+:root{--bg:#f6f8fa;--card:#fff;--line:#d8dee4;--txt:#1f2328;--mut:#656d76;--pos:#1a7f37;--neg:#cf222e;--acc:#0969da;--warn:#9a6700;--head:#eef2f6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.55 Inter,"Segoe UI",Arial,sans-serif}
+header{padding:18px 26px;background:var(--card);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px}
+h1{font-size:20px;margin:0}.stamp{color:var(--mut);font-size:12px}
+main{padding:18px 26px;max-width:1780px;margin:0 auto}
+h2{font-size:16px;margin:26px 0 12px;padding-left:10px;border-left:3px solid var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px;position:relative;box-shadow:0 1px 2px rgba(27,31,36,.06)}
+.card h3{font-size:12.5px;margin:0 0 4px;color:var(--mut);font-weight:600;padding-right:56px;min-height:34px}
+.val{font-size:25px;font-weight:700;letter-spacing:-.5px}
+.val small{font-size:12px;color:var(--mut);font-weight:500;margin-left:6px}
+.delta{font-size:12px;margin-left:8px}.up{color:var(--pos)}.down{color:var(--neg)}
+.src{font-size:10px;color:var(--mut);margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.spark{height:64px;margin-top:4px}
+.badge{position:absolute;top:11px;right:11px;font-size:10px;padding:2px 7px;border-radius:20px;border:1px solid var(--line);color:var(--mut);background:var(--head)}
+.badge.pending{color:var(--warn);border-color:#d4a72c;background:#fff8c5}
+table{width:100%;border-collapse:collapse;font-size:12px;background:var(--card);border:1px solid var(--line)}
+th,td{padding:6px 9px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:var(--card);min-width:260px}
+thead th{color:var(--mut);font-weight:600;background:var(--head);position:sticky;top:0;z-index:2}
+thead th:first-child{z-index:3}
+tbody tr:nth-child(even) td,tbody tr:nth-child(even) td:first-child{background:#fbfcfd}
+tbody tr:hover td{background:#eef4fb}
+.wrap{overflow:auto;max-height:76vh;border-radius:12px;box-shadow:0 1px 2px rgba(27,31,36,.06);margin-bottom:8px}
+.tabs{display:flex;gap:6px;margin:14px 0;flex-wrap:wrap}
+.tabs button{background:var(--card);color:var(--mut);border:1px solid var(--line);border-radius:8px;padding:6px 14px;cursor:pointer;font:inherit}
+.tabs button.on{color:#fff;background:var(--acc);border-color:var(--acc)}
+footer{color:var(--mut);font-size:12px;padding:20px 26px;border-top:1px solid var(--line);background:var(--card);margin-top:24px}
+</style></head><body>
+<header><h1>Макроэкономический дашборд РФ</h1>
+<div class="stamp">Январь 2025 — <span id="lastm"></span> · обновлено <span id="stamp"></span> · <span id="cnt"></span></div></header>
+<main>
+<div class="tabs">
+<button class="on" data-v="cards">Карточки</button>
+<button data-v="table">Таблицы по месяцам</button>
+<button data-v="charts">Графики</button>
+<button data-v="budget">Бюджет</button>
+</div>
+<section id="content"></section></main>
+<footer>Значения перенесены из файла makro-dashbord.xlsx; доли переведены в проценты. «—» = данные за период не опубликованы.</footer>
+<script>
+const DB=__PAYLOAD__;
+const C={acc:"#0969da",neg:"#cf222e",grid:"#e3e8ee",zero:"#9aa4af",txt:"#1f2328",mut:"#656d76",warn:"#bf8700"};
+const MN=["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"];
+const fp=p=>MN[+p.slice(5,7)-1]+" "+p.slice(2,4);
+const el=document.getElementById("content");
+const SEC=DB.section_titles;
+const SM=DB.section_start||{};
+function mrange(k){const st=SM[k];return st?DB.months.filter(m=>m>=st):DB.months;}
+function secOf(c){for(const k of Object.keys(DB.sections))if(DB.sections[k].includes(c))return k;return "activity";}
+function last2(s){const ks=DB.months.filter(m=>s.values[m]!==null&&s.values[m]!==undefined);
+ return{l:ks.at(-1),lv:ks.length?s.values[ks.at(-1)]:null,pv:ks.length>1?s.values[ks.at(-2)]:null};}
+function cards(){let h="";
+ for(const k of Object.keys(SEC)){h+=`<h2>${SEC[k]}</h2><div class="grid">`;
+  for(const c of DB.sections[k]){const s=DB.series[c],m=s.meta,{l,lv,pv}=last2(s),d=m.decimals;
+   const df=(lv!==null&&pv!==null)?lv-pv:null;
+   h+=`<div class="card">${s.status==="ok"?"":`<span class="badge ${s.status}">${s.status}</span>`}<h3>${m.title}</h3>
+   <div class="val">${lv===null?"—":lv.toFixed(d)}<small>${m.unit}${l?" · "+fp(l):""}</small>
+   ${df===null?"":`<span class="delta ${df>=0?"up":"down"}">${(df>0?"+":"")+df.toFixed(d)}</span>`}</div>
+   <div class="src" title="${m.source}">${m.source}</div><div class="spark" id="sp-${c}"></div></div>`;}
+  h+="</div>";}
+ el.innerHTML=h;
+ for(const c of Object.keys(DB.series)){const s=DB.series[c],x=mrange(secOf(c)),y=x.map(m=>s.values[m]??null);
+  Plotly.newPlot("sp-"+c,[{x,y,type:"scatter",mode:"lines+markers",connectgaps:true,
+   line:{width:2,color:C.acc,shape:"spline"},marker:{size:3.5,color:C.acc},hovertemplate:"%{x}: %{y}<extra></extra>"}],
+   {margin:{l:30,r:6,t:4,b:16},paper_bgcolor:"rgba(0,0,0,0)",plot_bgcolor:"rgba(0,0,0,0)",
+    font:{color:C.mut,size:9},xaxis:{showgrid:false,tickvals:[x[0],x.at(-1)]},
+    yaxis:{gridcolor:C.grid,zerolinecolor:C.zero},showlegend:false,
+    hoverlabel:{bgcolor:"#fff",bordercolor:C.grid,font:{color:C.txt}}},{displayModeBar:false,responsive:true});}}
+function table(){let h="";
+ for(const k of Object.keys(SEC)){
+  const MM=mrange(k);
+  h+=`<h2>${SEC[k]}</h2><div class="wrap"><table><thead><tr><th>Показатель</th>`+
+     MM.map(m=>`<th>${fp(m)}</th>`).join("")+`</tr></thead><tbody>`;
+  for(const c of DB.sections[k]){const s=DB.series[c],d=s.meta.decimals,th=s.meta.threshold;
+   h+=`<tr><td title="${s.meta.source}">${s.meta.title}</td>`+MM.map(m=>{const v=s.values[m];
+    if(v===null||v===undefined)return"<td>—</td>";
+    const cl=(th===null||th===undefined)?"":(v>=th?"up":"down");
+    return `<td class="${cl}">${v.toFixed(d)}</td>`;}).join("")+"</tr>";}
+  h+="</tbody></table></div>";}
+ el.innerHTML=h;}
+function charts(){let h="";
+ for(const k of Object.keys(SEC)){h+=`<h2>${SEC[k]}</h2><div class="grid">`;
+  for(const c of DB.sections[k])h+=`<div class="card"><div id="ch-${c}" style="height:245px"></div></div>`;h+="</div>";}
+ el.innerHTML=h;
+ for(const c of Object.keys(DB.series)){const s=DB.series[c],m=s.meta,x=mrange(secOf(c)),y=x.map(p=>s.values[p]??null);
+  const bar=m.unit==="%";
+  Plotly.newPlot("ch-"+c,[{x,y,type:bar?"bar":"scatter",mode:"lines+markers",connectgaps:true,
+   marker:{color:y.map(v=>(v!==null&&v<0)?C.neg:C.acc),size:5},line:{color:C.acc,width:2}}],
+   {title:{text:m.title,font:{size:11.5,color:C.txt}},margin:{l:42,r:12,t:30,b:42},
+    paper_bgcolor:"rgba(0,0,0,0)",plot_bgcolor:"rgba(0,0,0,0)",font:{color:C.mut,size:10},
+    xaxis:{tickangle:-45,showgrid:false,tickvals:x.filter((_,i)=>i%(x.length>12?3:1)===0),ticktext:x.filter((_,i)=>i%(x.length>12?3:1)===0).map(fp)},
+    yaxis:{gridcolor:C.grid,zerolinecolor:C.zero},showlegend:false,
+    hoverlabel:{bgcolor:"#fff",bordercolor:C.grid,font:{color:C.txt}},
+    shapes:(m.threshold!==null&&m.threshold!==undefined)?[{type:"line",xref:"paper",x0:0,x1:1,
+      y0:m.threshold,y1:m.threshold,line:{color:C.warn,dash:"dot",width:1}}]:[]},{displayModeBar:false,responsive:true});}}
+function budget(){const b=DB.budget,bm=b.monthly;
+ let h=`<h2>Раздел 5. Федеральный бюджет — помесячная динамика 2026</h2><div class="grid">
+ <div class="card"><div id="bg1" style="height:300px"></div></div>
+ <div class="card"><div id="bg2" style="height:300px"></div></div>
+ <div class="card"><div id="bg3" style="height:300px"></div></div>
+ <div class="card"><div id="bg4" style="height:300px"></div></div></div>
+ <h2>Полная таблица, млрд руб.</h2><div class="wrap"><table><thead><tr><th>Показатель</th>`+
+  b.cols.map(c=>`<th>${c}</th>`).join("")+`</tr></thead><tbody>`;
+ for(const r of b.rows){h+=`<tr><td>${r.name}</td>`+b.cols.map(c=>{const v=r.values[c];
+  if(v===null||v===undefined)return"<td>—</td>";
+  const cl=v<0?"down":"up";
+  return `<td class="${r.pct||r.name.includes("Дефицит")?cl:""}">${r.pct?v.toFixed(1)+" %":v.toLocaleString("ru-RU")}</td>`;}).join("")+"</tr>";}
+ h+="</tbody></table></div>";el.innerHTML=h;
+ const L={margin:{l:56,r:14,t:36,b:38},paper_bgcolor:"rgba(0,0,0,0)",plot_bgcolor:"rgba(0,0,0,0)",
+  font:{color:C.mut,size:10},xaxis:{showgrid:false},yaxis:{gridcolor:C.grid,zerolinecolor:C.zero},
+  hoverlabel:{bgcolor:"#fff",bordercolor:C.grid,font:{color:C.txt}},
+  legend:{orientation:"h",y:-0.16,font:{size:10}}};
+ const cfg={displayModeBar:false,responsive:true};
+ Plotly.newPlot("bg1",[
+  {x:bm.months,y:bm.ngd,type:"bar",name:"НГД факт",marker:{color:"#0969da"}},
+  {x:bm.months,y:bm.plan,type:"bar",name:"НГД план",marker:{color:"#b6cff5"}}],
+  {...L,title:{text:"Нефтегазовые доходы: факт vs план, млрд руб.",font:{size:12,color:C.txt}},barmode:"group"},cfg);
+ Plotly.newPlot("bg2",[
+  {x:bm.months,y:bm.exec,type:"bar",name:"% выполнения плана НГД",
+   marker:{color:bm.exec.map(v=>v>=100?"#1a7f37":"#cf222e")},text:bm.exec.map(v=>v.toFixed(0)+"%"),textposition:"outside"}],
+  {...L,title:{text:"Выполнение плана по НГД, %",font:{size:12,color:C.txt}},showlegend:false,
+   shapes:[{type:"line",xref:"paper",x0:0,x1:1,y0:100,y1:100,line:{color:C.warn,dash:"dot",width:1}}]},cfg);
+ Plotly.newPlot("bg3",[
+  {x:bm.months,y:bm.income,type:"bar",name:"Доходы",marker:{color:"#1a7f37"}},
+  {x:bm.months,y:bm.spend.map(v=>-Math.abs(v)),type:"bar",name:"Расходы",marker:{color:"#cf222e"}},
+  {x:bm.months,y:bm.deficit,type:"scatter",mode:"lines+markers",name:"Дефицит/профицит",
+   line:{color:"#1f2328",width:2},marker:{size:6}}],
+  {...L,title:{text:"Доходы, расходы и баланс, млрд руб.",font:{size:12,color:C.txt}},barmode:"relative"},cfg);
+ let cum=0;const cd=bm.deficit.map(v=>cum+=v);
+ Plotly.newPlot("bg4",[
+  {x:bm.months,y:bm.ngd,type:"bar",name:"НГД",marker:{color:"#0969da"}},
+  {x:bm.months,y:bm.nngd,type:"bar",name:"ННГД",marker:{color:"#8fbcf7"}},
+  {x:bm.months,y:cd,type:"scatter",mode:"lines+markers",name:"Дефицит нарастающим итогом",
+   yaxis:"y2",line:{color:"#cf222e",width:2,dash:"dot"},marker:{size:6}}],
+  {...L,title:{text:"Структура доходов и накопленный дефицит",font:{size:12,color:C.txt}},barmode:"stack",
+   yaxis2:{overlaying:"y",side:"right",gridcolor:"rgba(0,0,0,0)",zeroline:false,tickfont:{color:"#cf222e"}}},cfg);}
+const V={cards,table,charts,budget};
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".tabs button").forEach(x=>x.classList.remove("on"));b.classList.add("on");V[b.dataset.v]();});
+document.getElementById("stamp").textContent=DB.generated_at;
+document.getElementById("lastm").textContent=fp(DB.months.at(-1));
+document.getElementById("cnt").textContent=Object.keys(DB.series).length+" показателей";
+cards();
+</script></body></html>
