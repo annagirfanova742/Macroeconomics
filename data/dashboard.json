@@ -1,5 +1,5 @@
 {
- "generated_at": "07.08.2026 12:48 МСК",
+ "generated_at": "07.08.2026 15:05 МСК",
  "months": [
   "2025-01",
   "2025-02",
@@ -44,28 +44,32 @@
    "ie_pop",
    "obs_inf",
    "ie_biz",
-   "food",
-   "nonfood",
-   "serv"
+   "food_mom",
+   "food_yoy",
+   "nonfood_mom",
+   "nonfood_yoy",
+   "serv_mom",
+   "serv_yoy"
   ],
-  "production": [
-   "pr29",
-   "pr30",
-   "pr31",
-   "pr32",
-   "pr33",
-   "pr34",
-   "pr35",
-   "pr36",
-   "pr37",
-   "pr38",
-   "pr39",
-   "pr40",
-   "pr41",
-   "pr42",
-   "pr43",
-   "pr44",
-   "pr45"
+  "industry": [
+   "pi_mining",
+   "pi_constr",
+   "pi_agri",
+   "pi_transp",
+   "pi_avia"
+  ],
+  "shipment": [
+   "sh_coal",
+   "sh_oil",
+   "sh_gas",
+   "sh_iron",
+   "sh_nonfe",
+   "sh_wood",
+   "sh_chem",
+   "sh_pharm",
+   "sh_metal",
+   "sh_auto",
+   "sh_elec"
   ],
   "external": [
    "exp",
@@ -102,8 +106,8 @@
     "2026-04": 1.3,
     "2026-05": 0.3,
     "2026-06": 1.1,
-    "2026-07": 4.0,
-    "2026-08": 6.0
+    "2026-07": null,
+    "2026-08": null
    },
    "status": "ok"
   },
@@ -122,10 +126,10 @@
     "2025-04": 49.3,
     "2025-05": 50.2,
     "2025-06": 47.5,
-    "2025-07": 47.0,
+    "2025-07": 47,
     "2025-08": 48.7,
     "2025-09": 48.2,
-    "2025-10": 48.0,
+    "2025-10": 48,
     "2025-11": 48.3,
     "2025-12": 48.1,
     "2026-01": 49.4,
@@ -137,7 +141,7 @@
     "2026-07": 50.7,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "ibk": {
    "meta": {
@@ -169,7 +173,7 @@
     "2026-07": -3.6,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "ind": {
    "meta": {
@@ -197,9 +201,9 @@
     "2026-03": 2.3,
     "2026-04": 1.9,
     "2026-05": -0.7,
-    "2026-06": 4.0,
-    "2026-07": 4.0,
-    "2026-08": 4.0
+    "2026-06": 0.6,
+    "2026-07": null,
+    "2026-08": null
    },
    "status": "ok"
   },
@@ -230,7 +234,7 @@
     "2026-04": 1.9,
     "2026-05": 2.1,
     "2026-06": null,
-    "2026-07": 4.0,
+    "2026-07": null,
     "2026-08": null
    },
    "status": "ok"
@@ -262,7 +266,7 @@
     "2026-04": 5.1,
     "2026-05": 4.5,
     "2026-06": 2.8,
-    "2026-07": 4.0,
+    "2026-07": null,
     "2026-08": null
    },
    "status": "ok"
@@ -297,7 +301,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "hh": {
    "meta": {
@@ -314,7 +318,7 @@
     "2025-04": 5.6,
     "2025-05": 5.6,
     "2025-06": 5.5,
-    "2025-07": 6.0,
+    "2025-07": 6,
     "2025-08": 6.1,
     "2025-09": 6.4,
     "2025-10": 7.3,
@@ -329,7 +333,7 @@
     "2026-07": 8.7,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "retail": {
    "meta": {
@@ -361,7 +365,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "whole": {
    "meta": {
@@ -393,7 +397,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "cars": {
    "meta": {
@@ -420,7 +424,7 @@
     "2026-02": 2.5,
     "2026-03": 30.6,
     "2026-04": 15.1,
-    "2026-05": 32.2,
+    "2026-05": 20.5,
     "2026-06": 29.0,
     "2026-07": 1.2,
     "2026-08": null
@@ -457,7 +461,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "cpi_mom": {
    "meta": {
@@ -489,7 +493,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "core_yoy": {
    "meta": {
@@ -521,7 +525,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "core_mom": {
    "meta": {
@@ -553,7 +557,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "ie_pop": {
    "meta": {
@@ -582,10 +586,10 @@
     "2026-04": 12.9,
     "2026-05": 13.0,
     "2026-06": 12.4,
-    "2026-07": null,
+    "2026-07": 14.7,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "obs_inf": {
    "meta": {
@@ -617,7 +621,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "ie_biz": {
    "meta": {
@@ -628,7 +632,7 @@
     "source": "\"Ценовые ожидания предприятий возросли\" https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/"
    },
    "values": {
-    "2025-01": 12.0,
+    "2025-01": 10.8,
     "2025-02": 7.1,
     "2025-03": 5.2,
     "2025-04": 4.6,
@@ -641,7 +645,7 @@
     "2025-11": 6.3,
     "2025-12": 8.5,
     "2026-01": 10.4,
-    "2026-02": 1.5,
+    "2026-02": 5.9,
     "2026-03": 5.0,
     "2026-04": 4.7,
     "2026-05": 4.4,
@@ -651,7 +655,7 @@
    },
    "status": "ok"
   },
-  "food": {
+  "food_mom": {
    "meta": {
     "title": "Продовольственные товары, % м/м",
     "unit": "%",
@@ -681,9 +685,41 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "nonfood": {
+  "food_yoy": {
+   "meta": {
+    "title": "Продовольственные товары, % г/г",
+    "unit": "%",
+    "decimals": 2,
+    "threshold": null,
+    "source": "makro-dashbord.xlsx"
+   },
+   "values": {
+    "2025-01": 11.13,
+    "2025-02": 11.68,
+    "2025-03": 12.42,
+    "2025-04": 12.66,
+    "2025-05": 12.49,
+    "2025-06": 11.91,
+    "2025-07": 10.79,
+    "2025-08": 9.79,
+    "2025-09": 9.46,
+    "2025-10": 9.25,
+    "2025-11": 7.51,
+    "2025-12": 5.24,
+    "2026-01": 5.88,
+    "2026-02": 5.43,
+    "2026-03": 4.97,
+    "2026-04": 4.02,
+    "2026-05": 2.86,
+    "2026-06": 3.42,
+    "2026-07": null,
+    "2026-08": null
+   },
+   "status": "ok"
+  },
+  "nonfood_mom": {
    "meta": {
     "title": "Непродовольств. товары, % м/м",
     "unit": "%",
@@ -713,9 +749,41 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "serv": {
+  "nonfood_yoy": {
+   "meta": {
+    "title": "Непродовольств. товары, % г/г",
+    "unit": "%",
+    "decimals": 2,
+    "threshold": null,
+    "source": "makro-dashbord.xlsx"
+   },
+   "values": {
+    "2025-01": 6.07,
+    "2025-02": 6.07,
+    "2025-03": 5.93,
+    "2025-04": 5.43,
+    "2025-05": 4.81,
+    "2025-06": 4.47,
+    "2025-07": 4.07,
+    "2025-08": 3.87,
+    "2025-09": 3.85,
+    "2025-10": 3.83,
+    "2025-11": 3.47,
+    "2025-12": 2.99,
+    "2026-01": 3.18,
+    "2026-02": 3.2,
+    "2026-03": 3.54,
+    "2026-04": 3.88,
+    "2026-05": 4.19,
+    "2026-06": 5.26,
+    "2026-07": null,
+    "2026-08": null
+   },
+   "status": "ok"
+  },
+  "serv_mom": {
    "meta": {
     "title": "Услуги, % м/м",
     "unit": "%",
@@ -745,15 +813,47 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr29": {
+  "serv_yoy": {
+   "meta": {
+    "title": "Услуги, % г/г",
+    "unit": "%",
+    "decimals": 2,
+    "threshold": null,
+    "source": "makro-dashbord.xlsx"
+   },
+   "values": {
+    "2025-01": 14.43,
+    "2025-02": 14.0,
+    "2025-03": 12.87,
+    "2025-04": 9.23,
+    "2025-05": 12.55,
+    "2025-06": 12.02,
+    "2025-07": 11.9,
+    "2025-08": 11.12,
+    "2025-09": 10.99,
+    "2025-10": 10.43,
+    "2025-11": 9.41,
+    "2025-12": 9.36,
+    "2026-01": 9.08,
+    "2026-02": 9.89,
+    "2026-03": 9.96,
+    "2026-04": 9.9,
+    "2026-05": 10.13,
+    "2026-06": 10.58,
+    "2026-07": null,
+    "2026-08": null
+   },
+   "status": "ok"
+  },
+  "pi_mining": {
    "meta": {
     "title": "Добыча полезных ископаемых",
     "unit": "%",
     "decimals": 1,
     "threshold": 0,
-    "source": "Росстат, отгрузка по видам деятельности"
+    "source": "Росстат"
    },
    "values": {
     "2025-01": null,
@@ -777,15 +877,15 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr30": {
+  "pi_constr": {
    "meta": {
-    "title": "Обрабатывающие производства",
+    "title": "Строительство",
     "unit": "%",
     "decimals": 1,
     "threshold": 0,
-    "source": "Росстат, отгрузка по видам деятельности"
+    "source": "Росстат"
    },
    "values": {
     "2025-01": null,
@@ -800,18 +900,114 @@
     "2025-10": null,
     "2025-11": null,
     "2025-12": null,
-    "2026-01": -0.4,
-    "2026-02": 0.1,
-    "2026-03": 1.5,
-    "2026-04": 1.5,
-    "2026-05": 1.3,
+    "2026-01": -16.0,
+    "2026-02": -14.0,
+    "2026-03": -1.9,
+    "2026-04": -5.0,
+    "2026-05": -4.4,
     "2026-06": null,
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr31": {
+  "pi_agri": {
+   "meta": {
+    "title": "Сельское хозяйство",
+    "unit": "%",
+    "decimals": 1,
+    "threshold": 0,
+    "source": "Росстат"
+   },
+   "values": {
+    "2025-01": null,
+    "2025-02": null,
+    "2025-03": null,
+    "2025-04": null,
+    "2025-05": null,
+    "2025-06": null,
+    "2025-07": null,
+    "2025-08": null,
+    "2025-09": null,
+    "2025-10": null,
+    "2025-11": null,
+    "2025-12": null,
+    "2026-01": 1.1,
+    "2026-02": 0.4,
+    "2026-03": -0.5,
+    "2026-04": -0.5,
+    "2026-05": -0.2,
+    "2026-06": null,
+    "2026-07": null,
+    "2026-08": null
+   },
+   "status": "ok"
+  },
+  "pi_transp": {
+   "meta": {
+    "title": "Грузооборот транспорта",
+    "unit": "%",
+    "decimals": 1,
+    "threshold": 0,
+    "source": "Росстат"
+   },
+   "values": {
+    "2025-01": null,
+    "2025-02": null,
+    "2025-03": null,
+    "2025-04": null,
+    "2025-05": null,
+    "2025-06": null,
+    "2025-07": null,
+    "2025-08": null,
+    "2025-09": null,
+    "2025-10": null,
+    "2025-11": null,
+    "2025-12": null,
+    "2026-01": -5.8,
+    "2026-02": -1.8,
+    "2026-03": -2.9,
+    "2026-04": 3.4,
+    "2026-05": 2.1,
+    "2026-06": null,
+    "2026-07": null,
+    "2026-08": null
+   },
+   "status": "ok"
+  },
+  "pi_avia": {
+   "meta": {
+    "title": "Авиаперевозки (пассажиропоток)",
+    "unit": "%",
+    "decimals": 1,
+    "threshold": 0,
+    "source": "Росстат"
+   },
+   "values": {
+    "2025-01": null,
+    "2025-02": null,
+    "2025-03": null,
+    "2025-04": null,
+    "2025-05": null,
+    "2025-06": null,
+    "2025-07": null,
+    "2025-08": null,
+    "2025-09": null,
+    "2025-10": null,
+    "2025-11": null,
+    "2025-12": null,
+    "2026-01": 1.2,
+    "2026-02": -0.7,
+    "2026-03": -2.5,
+    "2026-04": -2.6,
+    "2026-05": -5.1,
+    "2026-06": null,
+    "2026-07": null,
+    "2026-08": null
+   },
+   "status": "ok"
+  },
+  "sh_coal": {
    "meta": {
     "title": "Добыча угля",
     "unit": "%",
@@ -841,9 +1037,9 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr32": {
+  "sh_oil": {
    "meta": {
     "title": "Добыча нефти и нефтяного (попутного) газа",
     "unit": "%",
@@ -873,9 +1069,9 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr33": {
+  "sh_gas": {
    "meta": {
     "title": "Добыча природного газа и газового конденсата",
     "unit": "%",
@@ -905,9 +1101,9 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr34": {
+  "sh_iron": {
    "meta": {
     "title": "Добыча и обогащение железных руд",
     "unit": "%",
@@ -937,9 +1133,9 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr35": {
+  "sh_nonfe": {
    "meta": {
     "title": "Добыча руд цветных металлов",
     "unit": "%",
@@ -969,9 +1165,9 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr36": {
+  "sh_wood": {
    "meta": {
     "title": "Обработка древесины",
     "unit": "%",
@@ -1001,9 +1197,9 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr37": {
+  "sh_chem": {
    "meta": {
     "title": "Производство основных химических веществ и удобрений",
     "unit": "%",
@@ -1033,9 +1229,9 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr38": {
+  "sh_pharm": {
    "meta": {
     "title": "Производство лекарственных средств",
     "unit": "%",
@@ -1065,9 +1261,9 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr39": {
+  "sh_metal": {
    "meta": {
     "title": "Производство металлургическое",
     "unit": "%",
@@ -1097,9 +1293,9 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr40": {
+  "sh_auto": {
    "meta": {
     "title": "Производство автотранспортных средств, прицепов и полуприцепов",
     "unit": "%",
@@ -1129,9 +1325,9 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
-  "pr41": {
+  "sh_elec": {
    "meta": {
     "title": "Обеспечение электроэнергией",
     "unit": "%",
@@ -1152,7 +1348,7 @@
     "2025-10": null,
     "2025-11": null,
     "2025-12": null,
-    "2026-01": 0.0,
+    "2026-01": 0,
     "2026-02": 1.4,
     "2026-03": 1.5,
     "2026-04": -0.3,
@@ -1161,135 +1357,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
-  },
-  "pr42": {
-   "meta": {
-    "title": "Строительство",
-    "unit": "%",
-    "decimals": 1,
-    "threshold": 0,
-    "source": "Росстат, отгрузка по видам деятельности"
-   },
-   "values": {
-    "2025-01": null,
-    "2025-02": null,
-    "2025-03": null,
-    "2025-04": null,
-    "2025-05": null,
-    "2025-06": null,
-    "2025-07": null,
-    "2025-08": null,
-    "2025-09": null,
-    "2025-10": null,
-    "2025-11": null,
-    "2025-12": null,
-    "2026-01": -16.0,
-    "2026-02": -14.0,
-    "2026-03": -1.9,
-    "2026-04": -5.0,
-    "2026-05": -4.4,
-    "2026-06": null,
-    "2026-07": null,
-    "2026-08": null
-   },
-   "status": "stale"
-  },
-  "pr43": {
-   "meta": {
-    "title": "Сельское хозяйство",
-    "unit": "%",
-    "decimals": 1,
-    "threshold": 0,
-    "source": "Росстат, отгрузка по видам деятельности"
-   },
-   "values": {
-    "2025-01": null,
-    "2025-02": null,
-    "2025-03": null,
-    "2025-04": null,
-    "2025-05": null,
-    "2025-06": null,
-    "2025-07": null,
-    "2025-08": null,
-    "2025-09": null,
-    "2025-10": null,
-    "2025-11": null,
-    "2025-12": null,
-    "2026-01": 1.1,
-    "2026-02": 0.4,
-    "2026-03": -0.5,
-    "2026-04": -0.5,
-    "2026-05": -0.2,
-    "2026-06": null,
-    "2026-07": null,
-    "2026-08": null
-   },
-   "status": "stale"
-  },
-  "pr44": {
-   "meta": {
-    "title": "Грузооборот транспорта",
-    "unit": "%",
-    "decimals": 1,
-    "threshold": 0,
-    "source": "Росстат, отгрузка по видам деятельности"
-   },
-   "values": {
-    "2025-01": null,
-    "2025-02": null,
-    "2025-03": null,
-    "2025-04": null,
-    "2025-05": null,
-    "2025-06": null,
-    "2025-07": null,
-    "2025-08": null,
-    "2025-09": null,
-    "2025-10": null,
-    "2025-11": null,
-    "2025-12": null,
-    "2026-01": -5.8,
-    "2026-02": -1.8,
-    "2026-03": -2.9,
-    "2026-04": 3.4,
-    "2026-05": 2.1,
-    "2026-06": null,
-    "2026-07": null,
-    "2026-08": null
-   },
-   "status": "stale"
-  },
-  "pr45": {
-   "meta": {
-    "title": "Авиаперевозки (пассажиропоток)",
-    "unit": "%",
-    "decimals": 1,
-    "threshold": 0,
-    "source": "Росстат, отгрузка по видам деятельности"
-   },
-   "values": {
-    "2025-01": null,
-    "2025-02": null,
-    "2025-03": null,
-    "2025-04": null,
-    "2025-05": null,
-    "2025-06": null,
-    "2025-07": null,
-    "2025-08": null,
-    "2025-09": null,
-    "2025-10": null,
-    "2025-11": null,
-    "2025-12": null,
-    "2026-01": 1.2,
-    "2026-02": -0.7,
-    "2026-03": -2.5,
-    "2026-04": -2.6,
-    "2026-05": -5.1,
-    "2026-06": null,
-    "2026-07": null,
-    "2026-08": null
-   },
-   "status": "stale"
+   "status": "ok"
   },
   "exp": {
    "meta": {
@@ -1306,7 +1374,7 @@
     "2025-04": 33.6,
     "2025-05": 32.4,
     "2025-06": 32.8,
-    "2025-07": 38.0,
+    "2025-07": 38,
     "2025-08": 31.5,
     "2025-09": 38.6,
     "2025-10": 37.4,
@@ -1321,7 +1389,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "imp": {
    "meta": {
@@ -1329,22 +1397,22 @@
     "unit": "$ млрд",
     "decimals": 1,
     "threshold": null,
-    "source": "Банк России, платёжный баланс"
+    "source": "https://cbr.ru/statistics/macro_itm/external_sector/pb/"
    },
    "values": {
     "2025-01": 22.1,
     "2025-02": 19.9,
     "2025-03": 23.2,
     "2025-04": 25.5,
-    "2025-05": 25.0,
+    "2025-05": 25,
     "2025-06": 23.6,
     "2025-07": 24.9,
     "2025-08": 24.1,
-    "2025-09": 25.0,
+    "2025-09": 25,
     "2025-10": 26.5,
     "2025-11": 27.3,
-    "2025-12": 34.0,
-    "2026-01": 21.0,
+    "2025-12": 34,
+    "2026-01": 21,
     "2026-02": 24.8,
     "2026-03": 27.2,
     "2026-04": 28.1,
@@ -1353,7 +1421,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "tb": {
    "meta": {
@@ -1361,7 +1429,7 @@
     "unit": "$ млрд",
     "decimals": 1,
     "threshold": null,
-    "source": "Банк России, платёжный баланс"
+    "source": "https://cbr.ru/statistics/macro_itm/external_sector/pb/"
    },
    "values": {
     "2025-01": 7.1,
@@ -1379,13 +1447,13 @@
     "2026-01": 8.2,
     "2026-02": 4.6,
     "2026-03": 14.3,
-    "2026-04": 11.0,
+    "2026-04": 11,
     "2026-05": 14.2,
     "2026-06": null,
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   },
   "ca": {
    "meta": {
@@ -1393,7 +1461,7 @@
     "unit": "$ млрд",
     "decimals": 1,
     "threshold": null,
-    "source": "Банк России, платёжный баланс"
+    "source": "https://cbr.ru/statistics/macro_itm/external_sector/pb/"
    },
    "values": {
     "2025-01": 2.9,
@@ -1406,7 +1474,7 @@
     "2025-08": -0.9,
     "2025-09": 8.1,
     "2025-10": 4.6,
-    "2025-11": 2.0,
+    "2025-11": 2,
     "2025-12": 2.8,
     "2026-01": 2.2,
     "2026-02": 0.5,
@@ -1417,7 +1485,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "stale"
+   "status": "ok"
   }
  },
  "budget": {
@@ -1439,34 +1507,34 @@
     "name": "НГД",
     "pct": false,
     "values": {
-     "2025": 8477.0,
-     "2026 ПМФ": 8919.0,
-     "янв 26": 393.0,
-     "фев 26": 432.0,
-     "мар 26": 617.0,
-     "апр 26": 856.0,
-     "май 26": 679.0,
-     "июн 26": 684.0,
-     "1К26": 1442.0,
-     "2К26": 2219.0,
-     "1П2026": 3661.0
+     "2025": 8477,
+     "2026 ПМФ": 8919,
+     "янв 26": 393,
+     "фев 26": 432,
+     "мар 26": 617,
+     "апр 26": 856,
+     "май 26": 679,
+     "июн 26": 684,
+     "1К26": 1442,
+     "2К26": 2219,
+     "1П2026": 3661
     }
    },
    {
     "name": "Плановые НГД",
     "pct": false,
     "values": {
-     "2025": 9124.0,
+     "2025": 9124,
      "2026 ПМФ": null,
-     "янв 26": 576.0,
-     "фев 26": 586.0,
-     "мар 26": 851.0,
-     "апр 26": 834.0,
-     "май 26": 504.0,
-     "июн 26": 708.0,
-     "1К26": 2013.0,
-     "2К26": 2046.0,
-     "1П2026": 4059.0
+     "янв 26": 576,
+     "фев 26": 586,
+     "мар 26": 851,
+     "апр 26": 834,
+     "май 26": 504,
+     "июн 26": 708.1,
+     "1К26": 2013,
+     "2К26": 2046.1,
+     "1П2026": 4059.1
     }
    },
    {
@@ -1490,34 +1558,34 @@
     "name": "ННГД",
     "pct": false,
     "values": {
-     "2025": 28807.0,
-     "2026 ПМФ": 31365.0,
-     "янв 26": 1971.0,
-     "фев 26": 1971.0,
-     "мар 26": 2924.0,
-     "апр 26": 2557.0,
-     "май 26": 2381.0,
-     "июн 26": 3157.0,
-     "1К26": 6866.0,
-     "2К26": 8095.0,
-     "1П2026": 14961.0
+     "2025": 28807,
+     "2026 ПМФ": 31365,
+     "янв 26": 1971,
+     "фев 26": 1971,
+     "мар 26": 2924,
+     "апр 26": 2557,
+     "май 26": 2381,
+     "июн 26": 3157,
+     "1К26": 6866,
+     "2К26": 8095,
+     "1П2026": 14961
     }
    },
    {
     "name": "Доходы",
     "pct": false,
     "values": {
-     "2025": 37284.0,
-     "2026 ПМФ": 40284.0,
-     "янв 26": 2364.0,
-     "фев 26": 2403.0,
-     "мар 26": 3541.0,
-     "апр 26": 3413.0,
-     "май 26": 3060.0,
-     "июн 26": 3841.0,
-     "1К26": 8308.0,
-     "2К26": 10314.0,
-     "1П2026": 18622.0
+     "2025": 37284,
+     "2026 ПМФ": 40284,
+     "янв 26": 2364,
+     "фев 26": 2403,
+     "мар 26": 3541,
+     "апр 26": 3413,
+     "май 26": 3060,
+     "июн 26": 3841,
+     "1К26": 8308,
+     "2К26": 10314,
+     "1П2026": 18622
     }
    },
    {
@@ -1541,17 +1609,17 @@
     "name": "Расходы",
     "pct": false,
     "values": {
-     "2025": -42909.0,
-     "2026 ПМФ": -44070.0,
-     "янв 26": 3993.0,
-     "фев 26": 4223.0,
-     "мар 26": 4669.0,
-     "апр 26": 4713.0,
-     "май 26": 3193.0,
-     "июн 26": 3562.0,
-     "1К26": 12885.0,
-     "2К26": 11468.0,
-     "1П2026": 24353.0
+     "2025": -42909,
+     "2026 ПМФ": -44070,
+     "янв 26": 3993,
+     "фев 26": 4223,
+     "мар 26": 4669,
+     "апр 26": 4713,
+     "май 26": 3193,
+     "июн 26": 3562,
+     "1К26": 12885,
+     "2К26": 11468,
+     "1П2026": 24353
     }
    },
    {
@@ -1575,17 +1643,17 @@
     "name": "Дефицит",
     "pct": false,
     "values": {
-     "2025": -5625.0,
-     "2026 ПМФ": -3787.0,
-     "янв 26": -1629.0,
-     "фев 26": -1820.0,
-     "мар 26": -1127.0,
-     "апр 26": -1301.0,
-     "май 26": -133.0,
-     "июн 26": 279.0,
-     "1К26": -4576.0,
-     "2К26": -1154.0,
-     "1П2026": -5731.0
+     "2025": -5625,
+     "2026 ПМФ": -3787,
+     "янв 26": -1629,
+     "фев 26": -1820,
+     "мар 26": -1127,
+     "апр 26": -1301,
+     "май 26": -133,
+     "июн 26": 279,
+     "1К26": -4576,
+     "2К26": -1154,
+     "1П2026": -5731
     }
    },
    {
@@ -1605,53 +1673,83 @@
      "1П2026": -2.5
     }
    }
-  ]
+  ],
+  "monthly": {
+   "months": [
+    "янв 26",
+    "фев 26",
+    "мар 26",
+    "апр 26",
+    "май 26",
+    "июн 26"
+   ],
+   "ngd": [
+    393,
+    432,
+    617,
+    856,
+    679,
+    684
+   ],
+   "plan": [
+    576,
+    586,
+    851,
+    834,
+    504,
+    708.1
+   ],
+   "exec": [
+    68.0,
+    74.0,
+    73.0,
+    102.6,
+    134.7,
+    96.6
+   ],
+   "nngd": [
+    1971,
+    1971,
+    2924,
+    2557,
+    2381,
+    3157
+   ],
+   "income": [
+    2364,
+    2403,
+    3541,
+    3413,
+    3060,
+    3841
+   ],
+   "spend": [
+    3993,
+    4223,
+    4669,
+    4713,
+    3193,
+    3562
+   ],
+   "deficit": [
+    -1629,
+    -1820,
+    -1127,
+    -1301,
+    -133,
+    279
+   ]
+  }
+ },
+ "section_start": {
+  "industry": "2026-01",
+  "shipment": "2026-01"
  },
  "section_titles": {
   "activity": "Раздел 1. Экономическая активность",
   "inflation": "Раздел 2. Инфляция",
-  "production": "Раздел 3. Отгрузка по видам деятельности, % г/г",
-  "external": "Раздел 4. Внешнеэкономическая статистика"
- },
- "section_start": {
-  "production": "2026-01"
- },
- "errors": {
-  "pmi": "RuntimeError: парсер вернул пустой результат",
-  "ibk": "RuntimeError: парсер вернул пустой результат",
-  "nwage": "RuntimeError: GET https://rosstat.gov.ru/labor_market_employment_salaries: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /labor_market_employment_salaries (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "hh": "RuntimeError: парсер вернул пустой результат",
-  "retail": "RuntimeError: парсер вернул пустой результат",
-  "whole": "RuntimeError: GET https://rosstat.gov.ru/statistics/opttorg: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/opttorg (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "cpi_yoy": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "cpi_mom": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "core_yoy": "RuntimeError: парсер вернул пустой результат",
-  "core_mom": "RuntimeError: парсер вернул пустой результат",
-  "ie_pop": "RuntimeError: парсер вернул пустой результат",
-  "obs_inf": "RuntimeError: парсер вернул пустой результат",
-  "food": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "nonfood": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "serv": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr29": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr30": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr31": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr32": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr33": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr34": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr35": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr36": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr37": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr38": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr39": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr40": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr41": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr42": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr43": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr44": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pr45": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "exp": "RuntimeError: парсер вернул пустой результат",
-  "imp": "RuntimeError: парсер вернул пустой результат",
-  "tb": "RuntimeError: парсер вернул пустой результат",
-  "ca": "RuntimeError: парсер вернул пустой результат"
+  "industry": "Раздел 3. Показатели промышленного производства, % г/г",
+  "shipment": "Раздел 4. Объем отгруженных товаров, % г/г (в денежном выражении)",
+  "external": "Раздел 5. Внешнеэкономическая статистика"
  }
 }
