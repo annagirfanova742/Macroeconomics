@@ -5,10 +5,10 @@
   "decimals": 1,
   "threshold": 0,
   "section": "activity",
+  "source_url": "https://ru.investing.com/economic-calendar/russian-monthly-gdp-407 или с https://ru.tradingeconomics.com/russia/monthly-gdp-yoy",
   "source_id": "te_investing",
   "te_slug": "russia/monthly-gdp-yoy",
-  "investing_id": 407,
-  "source_url": "https://ru.investing.com/economic-calendar/russian-monthly-gdp-407 или с https://ru.tradingeconomics.com/russia/monthly-gdp-yoy"
+  "investing_id": 407
  },
  "pmi": {
   "title": "PMI обрабатывающих отраслей",
@@ -16,10 +16,10 @@
   "decimals": 1,
   "threshold": 50,
   "section": "activity",
+  "source_url": "https://ru.tradingeconomics.com/russia/manufacturing-pmi#historical\nhttps://cbonds.ru/indexes/51339/?ysclid=mnmw0z9mop186006577",
   "source_id": "cbonds",
-  "cbonds_id": 51339,
   "te_slug": "russia/manufacturing-pmi",
-  "source_url": "https://ru.tradingeconomics.com/russia/manufacturing-pmi#historical\nhttps://cbonds.ru/indexes/51339/?ysclid=mnmw0z9mop186006577"
+  "cbonds_id": 51339
  },
  "ibk": {
   "title": "Индикатор бизнес-климата ЦБ",
@@ -27,8 +27,8 @@
   "decimals": 1,
   "threshold": 0,
   "section": "activity",
-  "source_id": "cbr_ibk",
-  "source_url": "https://cbr.ru/analytics/dkp/monitoring/0726/"
+  "source_url": "https://cbr.ru/analytics/dkp/monitoring/0726/",
+  "source_id": "cbr_ibk"
  },
  "ind": {
   "title": "Пром. производство, % г/г",
@@ -36,10 +36,10 @@
   "decimals": 1,
   "threshold": 0,
   "section": "activity",
+  "source_url": "https://ru.investing.com/economic-calendar/russian-industrial-production-553",
   "source_id": "te_investing",
-  "investing_id": 553,
   "te_slug": "russia/industrial-production",
-  "source_url": "https://ru.investing.com/economic-calendar/russian-industrial-production-553"
+  "investing_id": 553
  },
  "unemp": {
   "title": "Безработица, %",
@@ -47,10 +47,10 @@
   "decimals": 1,
   "threshold": null,
   "section": "activity",
+  "source_url": "makro-dashbord.xlsx",
   "source_id": "te_investing",
   "te_slug": "russia/unemployment-rate",
-  "investing_id": 556,
-  "source_url": "makro-dashbord.xlsx"
+  "investing_id": 556
  },
  "rwage": {
   "title": "Реальные зарплаты, % г/г",
@@ -58,9 +58,9 @@
   "decimals": 1,
   "threshold": 0,
   "section": "activity",
+  "source_url": "makro-dashbord.xlsx",
   "source_id": "te_investing",
-  "te_slug": "russia/wage-growth",
-  "source_url": "makro-dashbord.xlsx"
+  "te_slug": "russia/wage-growth"
  },
  "nwage": {
   "title": "Номинальные зарплаты, % г/г",
@@ -68,8 +68,8 @@
   "decimals": 1,
   "threshold": null,
   "section": "activity",
-  "source_id": "rosstat_zpl",
-  "source_url": "makro-dashbord.xlsx"
+  "source_url": "makro-dashbord.xlsx",
+  "source_id": "rosstat_zpl"
  },
  "hh": {
   "title": "hh.индекс",
@@ -77,8 +77,8 @@
   "decimals": 1,
   "threshold": null,
   "section": "activity",
-  "source_id": "hh_stats",
-  "source_url": "https://stats.hh.ru/?ysclid=mshkcr6i2c768642402"
+  "source_url": "https://stats.hh.ru/?ysclid=mshkcr6i2c768642402",
+  "source_id": "hh_stats"
  },
  "retail": {
   "title": "Оборот розн. торговли, % г/г",
@@ -86,10 +86,10 @@
   "decimals": 1,
   "threshold": 0,
   "section": "activity",
+  "source_url": "makro-dashbord.xlsx",
   "source_id": "te_investing",
-  "investing_id": 555,
   "te_slug": "russia/retail-sales-annual-growth-rate",
-  "source_url": "makro-dashbord.xlsx"
+  "investing_id": 555
  },
  "whole": {
   "title": "Оборот опт. торговли, % г/г",
@@ -97,8 +97,8 @@
   "decimals": 1,
   "threshold": 0,
   "section": "activity",
-  "source_id": "rosstat_opttorg",
-  "source_url": "makro-dashbord.xlsx"
+  "source_url": "makro-dashbord.xlsx",
+  "source_id": "rosstat_opttorg"
  },
  "cars": {
   "title": "Продажи новых авто, % г/г",
@@ -106,8 +106,8 @@
   "decimals": 1,
   "threshold": 0,
   "section": "activity",
-  "source_id": "autostat",
-  "source_url": "makro-dashbord.xlsx"
+  "source_url": "makro-dashbord.xlsx",
+  "source_id": "autostat"
  },
  "cpi_yoy": {
   "title": "ИПЦ, % г/г",
@@ -115,9 +115,9 @@
   "decimals": 2,
   "threshold": null,
   "section": "inflation",
+  "source_url": "https://rosstat.gov.ru/statistics/price \"Индексы потребительских цен на товары и услуги по Российской Федерации, месяцы (с 1991 г.)\"",
   "source_id": "rosstat_price",
-  "key": "ipc_yoy",
-  "source_url": "https://rosstat.gov.ru/statistics/price \"Индексы потребительских цен на товары и услуги по Российской Федерации, месяцы (с 1991 г.)\""
+  "key": "ipc_yoy"
  },
  "cpi_mom": {
   "title": "ИПЦ, % м/м",
@@ -125,9 +125,9 @@
   "decimals": 2,
   "threshold": null,
   "section": "inflation",
+  "source_url": "makro-dashbord.xlsx",
   "source_id": "rosstat_price",
-  "key": "ipc_mom",
-  "source_url": "makro-dashbord.xlsx"
+  "key": "ipc_mom"
  },
  "core_yoy": {
   "title": "Базовый ИПЦ, % г/г",
@@ -135,10 +135,10 @@
   "decimals": 2,
   "threshold": null,
   "section": "inflation",
+  "source_url": "https://www.fedstat.ru/indicator/31074",
   "source_id": "fedstat",
   "fedstat_id": 31074,
-  "mode": "yoy",
-  "source_url": "https://www.fedstat.ru/indicator/31074"
+  "mode": "yoy"
  },
  "core_mom": {
   "title": "Базовый ИПЦ, % м/м",
@@ -146,10 +146,10 @@
   "decimals": 2,
   "threshold": null,
   "section": "inflation",
+  "source_url": "https://www.fedstat.ru/indicator/31074",
   "source_id": "fedstat",
   "fedstat_id": 31074,
-  "mode": "mom",
-  "source_url": "https://www.fedstat.ru/indicator/31074"
+  "mode": "mom"
  },
  "ie_pop": {
   "title": "Инфляционные ожидания населения",
@@ -157,9 +157,9 @@
   "decimals": 1,
   "threshold": null,
   "section": "inflation",
+  "source_url": "https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/",
   "source_id": "cbr_infl_exp",
-  "key": "expected",
-  "source_url": "https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/"
+  "key": "expected"
  },
  "obs_inf": {
   "title": "Наблюдаемая инфляция",
@@ -167,9 +167,9 @@
   "decimals": 1,
   "threshold": null,
   "section": "inflation",
+  "source_url": "https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/",
   "source_id": "cbr_infl_exp",
-  "key": "observed",
-  "source_url": "https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/"
+  "key": "observed"
  },
  "ie_biz": {
   "title": "Инфляционные ожидания бизнеса",
@@ -177,209 +177,229 @@
   "decimals": 1,
   "threshold": null,
   "section": "inflation",
+  "source_url": "\"Ценовые ожидания предприятий возросли\" https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/",
   "source_id": "cbr_infl_exp",
-  "key": "business",
-  "source_url": "\"Ценовые ожидания предприятий возросли\" https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/"
+  "key": "business"
  },
- "food": {
+ "food_mom": {
   "title": "Продовольственные товары, % м/м",
   "unit": "%",
   "decimals": 2,
   "threshold": 0,
   "section": "inflation",
+  "source_url": "makro-dashbord.xlsx",
   "source_id": "rosstat_price",
-  "key": "food_mom",
-  "source_url": "makro-dashbord.xlsx"
+  "key": "food_mom"
  },
- "nonfood": {
+ "food_yoy": {
+  "title": "Продовольственные товары, % г/г",
+  "unit": "%",
+  "decimals": 2,
+  "threshold": null,
+  "section": "inflation",
+  "source_url": "makro-dashbord.xlsx",
+  "source_id": "rosstat_price",
+  "key": "food_yoy"
+ },
+ "nonfood_mom": {
   "title": "Непродовольств. товары, % м/м",
   "unit": "%",
   "decimals": 2,
   "threshold": 0,
   "section": "inflation",
+  "source_url": "makro-dashbord.xlsx",
   "source_id": "rosstat_price",
-  "key": "nonfood_mom",
-  "source_url": "makro-dashbord.xlsx"
+  "key": "nonfood_mom"
  },
- "serv": {
+ "nonfood_yoy": {
+  "title": "Непродовольств. товары, % г/г",
+  "unit": "%",
+  "decimals": 2,
+  "threshold": null,
+  "section": "inflation",
+  "source_url": "makro-dashbord.xlsx",
+  "source_id": "rosstat_price",
+  "key": "nonfood_yoy"
+ },
+ "serv_mom": {
   "title": "Услуги, % м/м",
   "unit": "%",
   "decimals": 2,
   "threshold": 0,
   "section": "inflation",
+  "source_url": "makro-dashbord.xlsx",
   "source_id": "rosstat_price",
-  "key": "services_mom",
-  "source_url": "makro-dashbord.xlsx"
+  "key": "services_mom"
  },
- "pr29": {
+ "serv_yoy": {
+  "title": "Услуги, % г/г",
+  "unit": "%",
+  "decimals": 2,
+  "threshold": null,
+  "section": "inflation",
+  "source_url": "makro-dashbord.xlsx",
+  "source_id": "rosstat_price",
+  "key": "services_yoy"
+ },
+ "pi_mining": {
   "title": "Добыча полезных ископаемых",
   "unit": "%",
   "decimals": 1,
   "threshold": 0,
-  "section": "production",
+  "section": "industry",
+  "source_url": "Росстат",
   "source_id": "rosstat_shipment",
-  "okved": "B",
-  "source_url": "Росстат, отгрузка по видам деятельности"
+  "okved": "B"
  },
- "pr30": {
-  "title": "Обрабатывающие производства",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "C",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr31": {
-  "title": "Добыча угля",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "05",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr32": {
-  "title": "Добыча нефти и нефтяного (попутного) газа",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "06.1",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr33": {
-  "title": "Добыча природного газа и газового конденсата",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "06.2",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr34": {
-  "title": "Добыча и обогащение железных руд",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "07.1",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr35": {
-  "title": "Добыча руд цветных металлов",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "07.2",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr36": {
-  "title": "Обработка древесины",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "16",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr37": {
-  "title": "Производство основных химических веществ и удобрений",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "20.1",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr38": {
-  "title": "Производство лекарственных средств",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "21",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr39": {
-  "title": "Производство металлургическое",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "24",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr40": {
-  "title": "Производство автотранспортных средств, прицепов и полуприцепов",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "29",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr41": {
-  "title": "Обеспечение электроэнергией",
-  "unit": "%",
-  "decimals": 1,
-  "threshold": 0,
-  "section": "production",
-  "source_id": "rosstat_shipment",
-  "okved": "35.1",
-  "source_url": "Росстат, отгрузка по видам деятельности"
- },
- "pr42": {
+ "pi_constr": {
   "title": "Строительство",
   "unit": "%",
   "decimals": 1,
   "threshold": 0,
-  "section": "production",
+  "section": "industry",
+  "source_url": "Росстат",
   "source_id": "rosstat_shipment",
-  "okved": "F",
-  "source_url": "Росстат, отгрузка по видам деятельности"
+  "okved": "F"
  },
- "pr43": {
+ "pi_agri": {
   "title": "Сельское хозяйство",
   "unit": "%",
   "decimals": 1,
   "threshold": 0,
-  "section": "production",
+  "section": "industry",
+  "source_url": "Росстат",
   "source_id": "rosstat_shipment",
-  "okved": "A",
-  "source_url": "Росстат, отгрузка по видам деятельности"
+  "okved": "A"
  },
- "pr44": {
+ "pi_transp": {
   "title": "Грузооборот транспорта",
   "unit": "%",
   "decimals": 1,
   "threshold": 0,
-  "section": "production",
+  "section": "industry",
+  "source_url": "Росстат",
   "source_id": "rosstat_shipment",
-  "okved": "transport",
-  "source_url": "Росстат, отгрузка по видам деятельности"
+  "okved": "transport"
  },
- "pr45": {
+ "pi_avia": {
   "title": "Авиаперевозки (пассажиропоток)",
   "unit": "%",
   "decimals": 1,
   "threshold": 0,
-  "section": "production",
+  "section": "industry",
+  "source_url": "Росстат",
   "source_id": "rosstat_shipment",
-  "okved": "avia",
-  "source_url": "Росстат, отгрузка по видам деятельности"
+  "okved": "avia"
+ },
+ "sh_coal": {
+  "title": "Добыча угля",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "05"
+ },
+ "sh_oil": {
+  "title": "Добыча нефти и нефтяного (попутного) газа",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "06.1"
+ },
+ "sh_gas": {
+  "title": "Добыча природного газа и газового конденсата",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "06.2"
+ },
+ "sh_iron": {
+  "title": "Добыча и обогащение железных руд",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "07.1"
+ },
+ "sh_nonfe": {
+  "title": "Добыча руд цветных металлов",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "07.2"
+ },
+ "sh_wood": {
+  "title": "Обработка древесины",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "16"
+ },
+ "sh_chem": {
+  "title": "Производство основных химических веществ и удобрений",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "20.1"
+ },
+ "sh_pharm": {
+  "title": "Производство лекарственных средств",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "21"
+ },
+ "sh_metal": {
+  "title": "Производство металлургическое",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "24"
+ },
+ "sh_auto": {
+  "title": "Производство автотранспортных средств, прицепов и полуприцепов",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "29"
+ },
+ "sh_elec": {
+  "title": "Обеспечение электроэнергией",
+  "unit": "%",
+  "decimals": 1,
+  "threshold": 0,
+  "section": "shipment",
+  "source_url": "Росстат, отгрузка по видам деятельности",
+  "source_id": "rosstat_shipment",
+  "okved": "35.1"
  },
  "exp": {
   "title": "Экспорт, $ млрд",
@@ -387,9 +407,9 @@
   "decimals": 1,
   "threshold": null,
   "section": "external",
+  "source_url": "https://cbr.ru/statistics/macro_itm/external_sector/pb/",
   "source_id": "cbr_pb",
-  "pb_key": "export",
-  "source_url": "https://cbr.ru/statistics/macro_itm/external_sector/pb/"
+  "pb_key": "export"
  },
  "imp": {
   "title": "Импорт, $ млрд",
@@ -397,9 +417,9 @@
   "decimals": 1,
   "threshold": null,
   "section": "external",
+  "source_url": "https://cbr.ru/statistics/macro_itm/external_sector/pb/",
   "source_id": "cbr_pb",
-  "pb_key": "import",
-  "source_url": "Банк России, платёжный баланс"
+  "pb_key": "import"
  },
  "tb": {
   "title": "Торговый баланс, $ млрд",
@@ -407,9 +427,9 @@
   "decimals": 1,
   "threshold": null,
   "section": "external",
+  "source_url": "https://cbr.ru/statistics/macro_itm/external_sector/pb/",
   "source_id": "cbr_pb",
-  "pb_key": "trade_balance",
-  "source_url": "Банк России, платёжный баланс"
+  "pb_key": "trade_balance"
  },
  "ca": {
   "title": "Профицит счета текущих операций, $ млрд",
@@ -417,8 +437,8 @@
   "decimals": 1,
   "threshold": null,
   "section": "external",
+  "source_url": "https://cbr.ru/statistics/macro_itm/external_sector/pb/",
   "source_id": "cbr_pb",
-  "pb_key": "current_account",
-  "source_url": "Банк России, платёжный баланс"
+  "pb_key": "current_account"
  }
 }
