@@ -5,7 +5,7 @@
   * ранее собранные значения (в т.ч. импортированные из Excel) никогда не теряются;
   * data/manual_overrides.csv (code,period,value) имеет высший приоритет.
 """
-import csv, json, os, sys, traceback
+import csv, datetime as dt, json, os, sys, traceback
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import pandas as pd
@@ -30,14 +30,21 @@ DISPATCH = {
 }
 
 
+LAST_CLOSED = (dt.date.today().replace(day=1) - dt.timedelta(days=1)).strftime("%Y-%m")
+
+
 def overrides():
     p = os.path.join(DATA, "manual_overrides.csv")
     out = {}
     if os.path.exists(p):
         for r in csv.DictReader(open(p, encoding="utf-8")):
             if not r.get("code") or str(r["code"]).startswith("#"): continue
+            raw = str(r.get("value", "")).strip()
+            if raw in ("", "-", "—", "none", "None"):
+                out.setdefault(r["code"], {})[r["period"]] = None
+                continue
             try:
-                out.setdefault(r["code"], {})[r["period"]] = float(str(r["value"]).replace(",", "."))
+                out.setdefault(r["code"], {})[r["period"]] = float(raw.replace(",", "."))
             except Exception:
                 pass
     return out
@@ -85,12 +92,19 @@ def main():
         try:
             fresh = fn(meta)
             if not fresh: raise RuntimeError("парсер вернул пустой результат")
+            lo, hi = meta.get("bounds", [-1e9, 1e9])
             for p, v in fresh.items():
-                if p in s["values"]:
-                    s["values"][p] = round(float(v), meta.get("decimals", 1))
+                if p not in s["values"] or p > LAST_CLOSED:
+                    continue
+                v = float(v)
+                if not (lo <= v <= hi):
+                    errors.setdefault(code + "@" + p, f"значение {v} вне диапазона {lo}..{hi} — отброшено")
+                    continue
+                s["values"][p] = round(v, meta.get("decimals", 1))
             s["status"] = "ok"
         except Exception as e:                                    # noqa: BLE001
-            s["status"] = "stale"; errors[code] = f"{type(e).__name__}: {e}"
+            errors[code] = f"{type(e).__name__}: {e}"
+            s["status"] = "ok" if any(v is not None for v in s["values"].values()) else "pending"
             traceback.print_exc()
 
     import_excel(db, os.path.join(DATA, "makro-dashbord.xlsx"))
@@ -100,11 +114,14 @@ def main():
             for p, v in vals.items():
                 if p in db["series"][code]["values"]:
                     db["series"][code]["values"][p] = v
-                    db["series"][code]["status"] = "manual"
 
     bp = os.path.join(DATA, "budget.json")
     if os.path.exists(bp):
-        db["budget"] = json.load(open(bp, encoding="utf-8"))
+        nb = json.load(open(bp, encoding="utf-8"))
+        old = db.get("budget", {})
+        if "monthly" not in nb and "monthly" in old:
+            nb["monthly"] = old["monthly"]
+        db["budget"] = nb
 
     db["generated_at"] = now_msk()
     db["errors"] = errors
