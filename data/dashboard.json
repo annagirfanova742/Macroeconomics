@@ -1,5 +1,5 @@
 {
- "generated_at": "07.08.2026 11:35 МСК",
+ "generated_at": "07.08.2026 12:48 МСК",
  "months": [
   "2025-01",
   "2025-02",
@@ -102,8 +102,8 @@
     "2026-04": 1.3,
     "2026-05": 0.3,
     "2026-06": 1.1,
-    "2026-07": null,
-    "2026-08": null
+    "2026-07": 4.0,
+    "2026-08": 6.0
    },
    "status": "ok"
   },
@@ -137,7 +137,7 @@
     "2026-07": 50.7,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "ibk": {
    "meta": {
@@ -169,7 +169,7 @@
     "2026-07": -3.6,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "ind": {
    "meta": {
@@ -197,9 +197,9 @@
     "2026-03": 2.3,
     "2026-04": 1.9,
     "2026-05": -0.7,
-    "2026-06": 0.6,
-    "2026-07": null,
-    "2026-08": null
+    "2026-06": 4.0,
+    "2026-07": 4.0,
+    "2026-08": 4.0
    },
    "status": "ok"
   },
@@ -230,7 +230,7 @@
     "2026-04": 1.9,
     "2026-05": 2.1,
     "2026-06": null,
-    "2026-07": null,
+    "2026-07": 4.0,
     "2026-08": null
    },
    "status": "ok"
@@ -262,7 +262,7 @@
     "2026-04": 5.1,
     "2026-05": 4.5,
     "2026-06": 2.8,
-    "2026-07": null,
+    "2026-07": 4.0,
     "2026-08": null
    },
    "status": "ok"
@@ -297,7 +297,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "hh": {
    "meta": {
@@ -329,7 +329,7 @@
     "2026-07": 8.7,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "retail": {
    "meta": {
@@ -361,7 +361,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "whole": {
    "meta": {
@@ -393,7 +393,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "cars": {
    "meta": {
@@ -420,7 +420,7 @@
     "2026-02": 2.5,
     "2026-03": 30.6,
     "2026-04": 15.1,
-    "2026-05": 20.5,
+    "2026-05": 32.2,
     "2026-06": 29.0,
     "2026-07": 1.2,
     "2026-08": null
@@ -457,7 +457,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "cpi_mom": {
    "meta": {
@@ -489,7 +489,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "core_yoy": {
    "meta": {
@@ -521,7 +521,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "core_mom": {
    "meta": {
@@ -553,7 +553,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "ie_pop": {
    "meta": {
@@ -585,7 +585,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "obs_inf": {
    "meta": {
@@ -617,7 +617,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "ie_biz": {
    "meta": {
@@ -628,7 +628,7 @@
     "source": "\"Ценовые ожидания предприятий возросли\" https://cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_26-06/"
    },
    "values": {
-    "2025-01": 10.8,
+    "2025-01": 12.0,
     "2025-02": 7.1,
     "2025-03": 5.2,
     "2025-04": 4.6,
@@ -641,7 +641,7 @@
     "2025-11": 6.3,
     "2025-12": 8.5,
     "2026-01": 10.4,
-    "2026-02": 5.9,
+    "2026-02": 1.5,
     "2026-03": 5.0,
     "2026-04": 4.7,
     "2026-05": 4.4,
@@ -681,7 +681,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "nonfood": {
    "meta": {
@@ -713,7 +713,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "serv": {
    "meta": {
@@ -745,7 +745,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr29": {
    "meta": {
@@ -777,7 +777,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr30": {
    "meta": {
@@ -809,7 +809,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr31": {
    "meta": {
@@ -841,7 +841,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr32": {
    "meta": {
@@ -873,7 +873,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr33": {
    "meta": {
@@ -905,7 +905,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr34": {
    "meta": {
@@ -937,7 +937,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr35": {
    "meta": {
@@ -969,7 +969,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr36": {
    "meta": {
@@ -1001,7 +1001,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr37": {
    "meta": {
@@ -1033,7 +1033,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr38": {
    "meta": {
@@ -1065,7 +1065,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr39": {
    "meta": {
@@ -1097,7 +1097,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr40": {
    "meta": {
@@ -1129,7 +1129,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr41": {
    "meta": {
@@ -1161,7 +1161,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr42": {
    "meta": {
@@ -1193,7 +1193,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr43": {
    "meta": {
@@ -1225,7 +1225,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr44": {
    "meta": {
@@ -1257,7 +1257,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "pr45": {
    "meta": {
@@ -1289,7 +1289,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "exp": {
    "meta": {
@@ -1321,7 +1321,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "imp": {
    "meta": {
@@ -1353,7 +1353,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "tb": {
    "meta": {
@@ -1385,7 +1385,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   },
   "ca": {
    "meta": {
@@ -1417,7 +1417,7 @@
     "2026-07": null,
     "2026-08": null
    },
-   "status": "ok"
+   "status": "stale"
   }
  },
  "budget": {
@@ -1605,73 +1605,7 @@
      "1П2026": -2.5
     }
    }
-  ],
-  "monthly": {
-   "months": [
-    "янв 26",
-    "фев 26",
-    "мар 26",
-    "апр 26",
-    "май 26",
-    "июн 26"
-   ],
-   "ngd": [
-    393.0,
-    432.0,
-    617.0,
-    856.0,
-    679.0,
-    684.0
-   ],
-   "plan": [
-    576.0,
-    586.0,
-    851.0,
-    834.0,
-    504.0,
-    708.0
-   ],
-   "exec": [
-    68.0,
-    74.0,
-    73.0,
-    102.6,
-    134.7,
-    96.6
-   ],
-   "nngd": [
-    1971.0,
-    1971.0,
-    2924.0,
-    2557.0,
-    2381.0,
-    3157.0
-   ],
-   "income": [
-    2364.0,
-    2403.0,
-    3541.0,
-    3413.0,
-    3060.0,
-    3841.0
-   ],
-   "spend": [
-    3993.0,
-    4223.0,
-    4669.0,
-    4713.0,
-    3193.0,
-    3562.0
-   ],
-   "deficit": [
-    -1629.0,
-    -1820.0,
-    -1127.0,
-    -1301.0,
-    -133.0,
-    279.0
-   ]
-  }
+  ]
  },
  "section_titles": {
   "activity": "Раздел 1. Экономическая активность",
@@ -1681,5 +1615,43 @@
  },
  "section_start": {
   "production": "2026-01"
+ },
+ "errors": {
+  "pmi": "RuntimeError: парсер вернул пустой результат",
+  "ibk": "RuntimeError: парсер вернул пустой результат",
+  "nwage": "RuntimeError: GET https://rosstat.gov.ru/labor_market_employment_salaries: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /labor_market_employment_salaries (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "hh": "RuntimeError: парсер вернул пустой результат",
+  "retail": "RuntimeError: парсер вернул пустой результат",
+  "whole": "RuntimeError: GET https://rosstat.gov.ru/statistics/opttorg: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/opttorg (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "cpi_yoy": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "cpi_mom": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "core_yoy": "RuntimeError: парсер вернул пустой результат",
+  "core_mom": "RuntimeError: парсер вернул пустой результат",
+  "ie_pop": "RuntimeError: парсер вернул пустой результат",
+  "obs_inf": "RuntimeError: парсер вернул пустой результат",
+  "food": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "nonfood": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "serv": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr29": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr30": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr31": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr32": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr33": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr34": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr35": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr36": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr37": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr38": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr39": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr40": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr41": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr42": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr43": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr44": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pr45": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "exp": "RuntimeError: парсер вернул пустой результат",
+  "imp": "RuntimeError: парсер вернул пустой результат",
+  "tb": "RuntimeError: парсер вернул пустой результат",
+  "ca": "RuntimeError: парсер вернул пустой результат"
  }
 }
