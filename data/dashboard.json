@@ -1,5 +1,5 @@
 {
- "generated_at": "15.08.2026 18:34 МСК",
+ "generated_at": "16.08.2026 10:08 МСК",
  "months": [
   "2025-01",
   "2025-02",
@@ -1763,9 +1763,8 @@
   "cpi_mom": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "core_yoy": "RuntimeError: парсер вернул пустой результат",
   "core_mom": "RuntimeError: парсер вернул пустой результат",
-  "ie_pop": "RuntimeError: GET https://cbr.ru/analytics/dkp/inflationary_expectations/: 403 Client Error: Forbidden for url: https://cbr.ru/analytics/dkp/inflationary_expectations/",
-  "obs_inf": "RuntimeError: GET https://cbr.ru/analytics/dkp/inflationary_expectations/: 403 Client Error: Forbidden for url: https://cbr.ru/analytics/dkp/inflationary_expectations/",
-  "ie_biz": "RuntimeError: GET https://cbr.ru/analytics/dkp/inflationary_expectations/: 403 Client Error: Forbidden for url: https://cbr.ru/analytics/dkp/inflationary_expectations/",
+  "ie_pop": "RuntimeError: парсер вернул пустой результат",
+  "obs_inf": "RuntimeError: парсер вернул пустой результат",
   "food_mom": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "food_yoy": "KeyError: 'food_yoy'",
   "nonfood_mom": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
@@ -1788,9 +1787,9 @@
   "sh_metal": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "sh_auto": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "sh_elec": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "exp": "RuntimeError: GET https://cbr.ru/statistics/macro_itm/external_sector/pb/: 403 Client Error: Forbidden for url: https://cbr.ru/statistics/macro_itm/external_sector/pb/",
-  "imp": "RuntimeError: GET https://cbr.ru/statistics/macro_itm/external_sector/pb/: 403 Client Error: Forbidden for url: https://cbr.ru/statistics/macro_itm/external_sector/pb/",
-  "tb": "RuntimeError: GET https://cbr.ru/statistics/macro_itm/external_sector/pb/: 403 Client Error: Forbidden for url: https://cbr.ru/statistics/macro_itm/external_sector/pb/",
-  "ca": "RuntimeError: GET https://cbr.ru/statistics/macro_itm/external_sector/pb/: 403 Client Error: Forbidden for url: https://cbr.ru/statistics/macro_itm/external_sector/pb/"
+  "exp": "RuntimeError: парсер вернул пустой результат",
+  "imp": "RuntimeError: парсер вернул пустой результат",
+  "tb": "RuntimeError: парсер вернул пустой результат",
+  "ca": "RuntimeError: парсер вернул пустой результат"
  }
 }
