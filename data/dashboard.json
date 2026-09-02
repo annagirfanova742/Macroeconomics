@@ -1,5 +1,5 @@
 {
- "generated_at": "01.09.2026 21:30 МСК",
+ "generated_at": "02.09.2026 14:15 МСК",
  "months": [
   "2025-01",
   "2025-02",
@@ -1779,7 +1779,7 @@
   "sh_coal": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "sh_oil": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "sh_gas": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "sh_iron": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "sh_iron": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Read timed out. (read timeout=60)",
   "sh_nonfe": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "sh_wood": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "sh_chem": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
