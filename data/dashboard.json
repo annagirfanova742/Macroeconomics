@@ -1,5 +1,5 @@
 {
- "generated_at": "09.09.2026 21:39 МСК",
+ "generated_at": "10.09.2026 14:17 МСК",
  "months": [
   "2025-01",
   "2025-02",
@@ -1759,7 +1759,6 @@
   "hh": "RuntimeError: парсер вернул пустой результат",
   "retail": "RuntimeError: парсер вернул пустой результат",
   "whole": "RuntimeError: GET https://rosstat.gov.ru/statistics/opttorg: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/opttorg (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "cars": "RuntimeError: GET https://www.autostat.ru/press-releases/: 403 Client Error: Forbidden for url: https://www.autostat.ru/press-releases/",
   "cpi_yoy": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "cpi_mom": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "core_yoy": "RuntimeError: парсер вернул пустой результат",
@@ -1776,7 +1775,7 @@
   "pi_constr": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "pi_agri": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "pi_transp": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-  "pi_avia": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+  "pi_avia": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by ConnectTimeoutError(<HTTPSConnection(host='rosstat.gov.ru', port=443) at 0x7fb2db8942c0>, 'Connection to rosstat.gov.ru timed out. (connect timeout=60)'))",
   "sh_coal": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "sh_oil": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
   "sh_gas": "RuntimeError: GET https://rosstat.gov.ru/enterprise_industrial: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /enterprise_industrial (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
