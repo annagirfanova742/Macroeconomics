@@ -1,5 +1,5 @@
 {
- "generated_at": "05.11.2026 17:40 МСК",
+ "generated_at": "06.11.2026 00:33 МСК",
  "months": [
   "2025-01",
   "2025-02",
@@ -1763,8 +1763,9 @@
   "cpi_mom": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))",
   "core_yoy": "RuntimeError: парсер вернул пустой результат",
   "core_mom": "RuntimeError: парсер вернул пустой результат",
-  "ie_pop": "RuntimeError: парсер вернул пустой результат",
-  "obs_inf": "RuntimeError: парсер вернул пустой результат",
+  "ie_pop": "RuntimeError: GET https://cbr.ru/analytics/dkp/inflationary_expectations/: 403 Client Error: Forbidden for url: https://cbr.ru/analytics/dkp/inflationary_expectations/",
+  "obs_inf": "RuntimeError: GET https://cbr.ru/analytics/dkp/inflationary_expectations/: 403 Client Error: Forbidden for url: https://cbr.ru/analytics/dkp/inflationary_expectations/",
+  "ie_biz": "RuntimeError: GET https://cbr.ru/analytics/dkp/inflationary_expectations/: 403 Client Error: Forbidden for url: https://cbr.ru/analytics/dkp/inflationary_expectations/",
   "food_mom": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))",
   "food_yoy": "KeyError: 'food_yoy'",
   "nonfood_mom": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))",
