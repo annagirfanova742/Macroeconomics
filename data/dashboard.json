@@ -1,5 +1,5 @@
 {
- "generated_at": "08.11.2026 22:48 МСК",
+ "generated_at": "10.11.2026 02:53 МСК",
  "months": [
   "2025-01",
   "2025-02",
@@ -1791,6 +1791,6 @@
   "exp": "RuntimeError: GET https://cbr.ru/statistics/macro_itm/external_sector/pb/: 403 Client Error: Forbidden for url: https://cbr.ru/statistics/macro_itm/external_sector/pb/",
   "imp": "RuntimeError: GET https://cbr.ru/statistics/macro_itm/external_sector/pb/: 403 Client Error: Forbidden for url: https://cbr.ru/statistics/macro_itm/external_sector/pb/",
   "tb": "RuntimeError: GET https://cbr.ru/statistics/macro_itm/external_sector/pb/: 403 Client Error: Forbidden for url: https://cbr.ru/statistics/macro_itm/external_sector/pb/",
-  "ca": "RuntimeError: парсер вернул пустой результат"
+  "ca": "RuntimeError: GET https://cbr.ru/statistics/macro_itm/external_sector/pb/: 403 Client Error: Forbidden for url: https://cbr.ru/statistics/macro_itm/external_sector/pb/"
  }
 }
