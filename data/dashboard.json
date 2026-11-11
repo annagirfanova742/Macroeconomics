@@ -1,5 +1,5 @@
 {
- "generated_at": "11.11.2026 17:02 МСК",
+ "generated_at": "12.11.2026 00:57 МСК",
  "months": [
   "2025-01",
   "2025-02",
@@ -1754,7 +1754,7 @@
  },
  "errors": {
   "pmi": "RuntimeError: парсер вернул пустой результат",
-  "ibk": "RuntimeError: парсер вернул пустой результат",
+  "ibk": "RuntimeError: GET https://cbr.ru/analytics/dkp/monitoring/: 403 Client Error: Forbidden for url: https://cbr.ru/analytics/dkp/monitoring/",
   "nwage": "RuntimeError: GET https://rosstat.gov.ru/labor_market_employment_salaries: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /labor_market_employment_salaries (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))",
   "hh": "RuntimeError: парсер вернул пустой результат",
   "retail": "RuntimeError: парсер вернул пустой результат",
