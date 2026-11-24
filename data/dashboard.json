@@ -1,5 +1,5 @@
 {
- "generated_at": "23.11.2026 21:01 МСК",
+ "generated_at": "24.11.2026 05:21 МСК",
  "months": [
   "2025-01",
   "2025-02",
@@ -1759,6 +1759,7 @@
   "hh": "RuntimeError: парсер вернул пустой результат",
   "retail": "RuntimeError: парсер вернул пустой результат",
   "whole": "RuntimeError: GET https://rosstat.gov.ru/statistics/opttorg: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/opttorg (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))",
+  "cars": "RuntimeError: GET https://www.autostat.ru/press-releases/: HTTPSConnectionPool(host='www.autostat.ru', port=443): Read timed out. (read timeout=60)",
   "cpi_yoy": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))",
   "cpi_mom": "RuntimeError: GET https://rosstat.gov.ru/statistics/price: HTTPSConnectionPool(host='rosstat.gov.ru', port=443): Max retries exceeded with url: /statistics/price (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))",
   "core_yoy": "RuntimeError: парсер вернул пустой результат",
